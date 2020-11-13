@@ -1,0 +1,64 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = vgg 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                   elephant.JPG  label:                   elephant
+ 2 key:                      Shiba.jpg  label:                      shiba
+ 3 key:                      cup_2.JPG  label:                        cup
+ 4 key:             siberian_husky.JPG  label:             siberian husky
+
+     MATCH:
+
+                  elephant.JPG: 
+Real:                   elephant   Classifier: african elephant, loxodonta africana
+
+ NOT A MATCH:
+
+                     Shiba.jpg: 
+Real:                      shiba   Classifier:                               
+
+                     cup_2.JPG: 
+Real:                        cup   Classifier:                               
+
+            siberian_husky.JPG: 
+Real:             siberian husky   Classifier:                               
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+
+     MATCH:
+
+                  elephant.JPG: 
+Real:                   elephant   Classifier: african elephant, loxodonta africana  
+PetLabelDog: 0  ClassLabelDog: 0
+
+ NOT A MATCH:
+
+                     Shiba.jpg: 
+Real:                      shiba   Classifier:                                 
+PetLabelDog: 0  ClassLabelDog: 0
+
+                     cup_2.JPG: 
+Real:                        cup   Classifier:                                 
+PetLabelDog: 0  ClassLabelDog: 0
+
+            siberian_husky.JPG: 
+Real:             siberian husky   Classifier:                                 
+PetLabelDog: 1  ClassLabelDog: 0
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  1  N NotDog Images:  3 
+Pct Corr dog:   0.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  1  N NotDog Images:  3 
+Pct Corr dog:   0.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+Statistics for Model used: vgg
+Number of incorrect dogs: 1
+Number of incorrect breeds: 3
+
+** Total Elapsed Runtime: 0:0:3
